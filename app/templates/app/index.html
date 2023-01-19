@@ -1,0 +1,44 @@
+{% extends 'app/base.html' %}
+
+{% block main %}
+<div class="container">
+    <h2 class="heading2">Menu</h2>
+    <h3>Table no: {{ table_no}}</h3>
+    <form class="form-container" action="{% url 'order'  %}" method="get">
+        <table class="GeneratedTable">
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>PuranPoli</td>
+                    <td>180/-</td>
+                    <td> <input type="checkbox" name="food1" value="PuranPoli" /> </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Dal batti</td>
+                    <td>120/-</td>
+                    <td> <input type="checkbox" name="food2" value="Dal Batti" /> </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Biryani</td>
+                    <td>180/-</td>
+                    <td> <input type="checkbox" name="food3" value="Biryani" /> </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="buttonCenter">
+        <input class="orderButton" type="submit"  value="Order" />
+        </div>
+    </form>
+</div>
+
+{% endblock %}

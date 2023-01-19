@@ -1,0 +1,37 @@
+{% extends 'app/base.html' %}
+
+{% block main %}
+<div class="container">
+    <h2 class="heading2">All Orders</h2>
+
+    <form class="form-container" action="#" method="get">
+        <table class="GeneratedTable">
+            <thead>
+                <tr>
+                    <!--<th>Sr. No</th>-->
+                    <th>Table No</th>
+                    <th>Name</th>
+                    <th>Mobile No.</th>
+                    <th>Order</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in data %}
+          
+
+                <tr>
+                    <!--<td>1.</td>-->
+                    <td>{{ i.table_no }}</td>
+                    <td>{{ i.name }}</td>
+                    <td>{{ i.mobile }}</td>
+                    <td>{{ i.food }}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </form>
+</div>
+
+{% endblock %}

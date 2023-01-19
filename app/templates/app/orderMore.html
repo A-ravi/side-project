@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+
+{% block main %}
+<div class="container">
+    <h2>Thank you for Order!!</h2>
+    <h3>Please fill up the details</h3>
+    <div class="form-container">
+        <hr />
+        <div class="buttonCenter">
+            <a href="{% url 'index'  table_no  %}"> <input class="confirmButton" type="submit" value="Order More" /></a>
+        </div>
+        <div class="buttonCenter">
+            <input class="payment" type="submit" name="name" value="Payment" />
+        </div>
+    </div>
+</div>
+
+{% endblock %}

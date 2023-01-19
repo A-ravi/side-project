@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+
+{% block main %}
+<div class="container">
+    <h2>Confirm your order</h2>
+        <h3>Please fill up the details</h3>
+        <form action="{% url 'order'%}" method="post" class="form-container">
+            <hr />
+            {% csrf_token %}
+            <label id="name">Name:</label>
+            <input class="form-input" type="text" name="name"  placeholder="Enter your name: " /><br />
+            <label id="phone">Phone number:</label>
+            <input class="form-input" type="text" name="phonenumber" placeholder=" Enter your phone number" />
+            <div class="buttonCenter">
+                <input class="orderButton" type="submit"  value="Order" />
+            </div>
+        </form>
+</div>
+
+{% endblock %}

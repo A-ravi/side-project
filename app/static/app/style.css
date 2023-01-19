@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+}
+
+.heading{
+    background-color: grey;
+    height : 70px;
+
+}
+#heading1{
+    margin:0px;
+    text-align:center;
+    font-size:3em;
+    color: white;
+}
+
+.heading2{
+    font-size:40px;
+    text-align: center;
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+table.GeneratedTable {
+    width: 100%;
+    background-color: #c7ff76;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    color: #000000;
+}
+
+    table.GeneratedTable td, table.GeneratedTable th {
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        padding: 3px;
+    }
+
+    table.GeneratedTable thead {
+        background-color: #ffcc00;
+    }
+
+.orderButton {
+    width: 70px;
+    border: 0px;
+    background: blue;
+    color: white;
+    margin: 45px;
+    padding:10px
+}
+
+.buttonCenter {
+    margin: 10px;
+}
+
+.form-container{
+    text-align:left;
+}
+
+.form-input{
+    margin: 20px;
+}
+
+.confirmButton {
+    element .style
+
+
+}
+
+.confirmButton {
+    background-color: blue;
+    border: 0px;
+    padding: 10px;
+    color: white;
+}
+
+.payment {
+    background-color: lightgreen;
+    border: 0px;
+    padding: 10px;
+    color: white;
+}

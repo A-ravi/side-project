@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+
+{% block main %}
+<div class="container">
+    <h2>Admin - Login</h2>
+    <h3>Please fill up the details</h3>
+    <form action="{% url 'adminLogin' %}" method="post" class="form-container">
+        <hr />
+        {% csrf_token %}
+        <label id="name">Username:</label>
+        <input class="form-input" type="text" name="username" value="" placeholder="Enter your name: " /><br />
+        <label id="phone">Password:</label>
+        <input class="form-input" type="password" name="password" placeholder=" Enter your phone number" value="" />
+        <div class="buttonCenter">
+            <input class="orderButton" type="submit" value="Login" />
+        </div>
+    </form>
+</div>
+
+{% endblock %}
